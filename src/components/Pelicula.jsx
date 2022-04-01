@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { Suspense ,lazy} from 'react';
+import LoadingImage from './LoadingImage';
+const Image = lazy(() => import('./Image'));
 
 const Pelicula = (props) => {
     return (
         <section>
-            <figure>
-                <img src={props.img} alt="" />
-            </figure>
+            <Suspense fallback={<LoadingImage/>}>
+                <Image img={props.img} />   
+            </Suspense>
             <article>
                 <div className='div1'>
                     <h3>{props.titulo}</h3>

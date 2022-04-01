@@ -61,6 +61,8 @@ figure{
   background-color: rgb(22, 32, 49);
   display: flex;
   justify-content: center;
+  min-width: 160px;
+  min-height: 260.99px;
 }
 
 .clasificacion{
@@ -80,5 +82,21 @@ figure{
     display: block;
     max-width: fit-content;
     object-fit: contain;
+  }
+}
+.loading-image{
+  /* background-color: rgb(28, 40, 59); */
+  width: 160px;
+  height: 260.99px;
+  animation: loading 1s infinite alternate;
+}
+@keyframes loading {
+  0%{
+    background-color: rgb(28, 40, 59);
+    
+  }
+  100%{
+  background-color: rgb(40, 54, 75);
+
   }
 }
