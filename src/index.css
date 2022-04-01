@@ -17,10 +17,6 @@ h1{
 h3{
   font-size: 1.1rem;
 }
-p{
-  font-size: .85rem;
-  color: rgb(226, 226, 226);
-}
 
 img{
   display: block;
@@ -34,6 +30,10 @@ img{
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+.peliculas section article div p{
+  font-size: .85rem;
+  color: rgb(226, 226, 226);
 }
 section{
   background-color: rgb(27, 37, 59);
