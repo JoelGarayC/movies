@@ -1,102 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 body {
   background-color: rgb(18, 27, 44);
   color: white;
-  
 }
-h1{
-  padding: 1rem 1rem 0 1rem;
+h1 {
   font-size: 1.5rem;
+  padding: 1rem 1rem 0 1rem;
 }
-h3{
+h3 {
   font-size: 1.1rem;
 }
 
-img{
+img {
   display: block;
   max-width: 100%;
   object-fit: cover;
 }
-.peliculas{
-  max-width: 60rem;
-  margin: auto;
-  padding: 1rem;
+.peliculas {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin: auto;
+  max-width: 60rem;
+  padding: 1rem;
 }
-.peliculas section article div p{
-  font-size: .85rem;
+.peliculas section article div p {
   color: rgb(226, 226, 226);
+  font-size: 0.85rem;
 }
-section{
+section {
   background-color: rgb(27, 37, 59);
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-section article{
-  padding: 1rem;
+section article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  padding: 1rem;
 }
-.div1{
+.div1 {
   padding-bottom: 1rem;
 }
 
-section article div p{
-  margin-top: .3rem;
+section article div p {
+  margin-top: 0.3rem;
 }
 
-
-figure{
+figure {
   background-color: rgb(22, 32, 49);
   display: flex;
   justify-content: center;
-  min-width: 160px;
   min-height: 260.99px;
+  min-width: 160px;
 }
 
-.clasificacion{
+.clasificacion {
   font-weight: bold;
 }
 
-@media (min-width:700px){
-  section{
+@media (min-width: 700px) {
+  section {
     display: flex;
     flex-direction: row;
     gap: 1rem;
   }
-  .div1{
+  .div1 {
     padding-bottom: 0;
   }
-  img{
+  img {
     display: block;
     max-width: fit-content;
     object-fit: contain;
   }
 }
-.loading-image{
+.loading-image {
+  animation: loading 1s infinite alternate;
+  height: 260.99px;
   /* background-color: rgb(28, 40, 59); */
   width: 160px;
-  height: 260.99px;
-  animation: loading 1s infinite alternate;
 }
 @keyframes loading {
-  0%{
+  0% {
     background-color: rgb(28, 40, 59);
-    
   }
-  100%{
-  background-color: rgb(40, 54, 75);
-
+  100% {
+    background-color: rgb(40, 54, 75);
   }
 }
